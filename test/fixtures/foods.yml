@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  protein: 9.99
+  fat: 9.99
+  carbohydrate: 9.99
+  calories: 9.99
+  vegan: false
+  paleo: false
+  basic: false
+  atkins: false
+  ectomorphs: false
+  mesomorphs: false
+  endomorphs: false
+
+two:
+  name: MyString
+  protein: 9.99
+  fat: 9.99
+  carbohydrate: 9.99
+  calories: 9.99
+  vegan: false
+  paleo: false
+  basic: false
+  atkins: false
+  ectomorphs: false
+  mesomorphs: false
+  endomorphs: false

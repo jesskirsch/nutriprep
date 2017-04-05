@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  instructions: MyText
+  category: MyString
+  vegan: false
+  paleo: false
+  basic: false
+  atkins: false
+  ectomorphs: false
+  mesomorphs: false
+  endomorphs: false
+
+two:
+  name: MyString
+  instructions: MyText
+  category: MyString
+  vegan: false
+  paleo: false
+  basic: false
+  atkins: false
+  ectomorphs: false
+  mesomorphs: false
+  endomorphs: false
