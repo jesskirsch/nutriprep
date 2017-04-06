@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :biometrics
   root 'welcome#index'
   get 'welcome/index'
 
@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
-  
+
 end

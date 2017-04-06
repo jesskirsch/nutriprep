@@ -1,0 +1,59 @@
+
+<%= form_for @biometric do |f| %>
+
+  <% if @biometric.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@biometric.errors.count, "error") %> prohibited
+        these biometrics from being saved:
+      </h2>
+      <ul>
+        <% @biometric.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </p>
+
+  <p>
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :current_weight %><br>
+    <%= f.text_field :current_weight %>
+  </p>
+  <p>
+    <%= f.label :goal_weight %><br>
+    <%= f.text_field :goal_weight %>
+  </p>
+  <p>
+    <%= f.label :waist_size %><br>
+    <%= f.text_field :waist_size %>
+  </p>
+  <p>
+    <%= f.label :activity %><br>
+    <%= f.text_field :activity %>
+  </p>
+  <p>
+    <%= f.label :body_type %><br>
+    <%= f.text_field :body_type %>
+  </p>
+  <p>
+    <%= f.label :goal %><br>
+    <%= f.text_field :goal %>
+  </p>
+  <p>
+    <%= f.label :diet %><br>
+    <%= f.text_field :diet %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
