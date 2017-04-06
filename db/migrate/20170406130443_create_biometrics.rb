@@ -1,9 +1,6 @@
-class CreateUsers < ActiveRecord::Migration[5.0]
+class CreateBiometrics < ActiveRecord::Migration[5.0]
   def change
-    create_table :users do |t|
-      t.string :name
-      t.string :email
-      t.string :password_digest
+    create_table :biometrics do |t|
       t.string :gender
       t.integer :age
       t.integer :height
@@ -12,8 +9,9 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.integer :waist_size
       t.string :activity
       t.string :body_type
-      t.string :goal
       t.string :diet
+      t.string :goal
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
