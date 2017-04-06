@@ -13,3 +13,19 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+a{
+  margin: 15px;
+  padding: 14px 16px;
+  color: white;
+}
+
+a:hover{
+  color: white;
+  background-color: #60ba62;
+}
+
+#nav{
+  display: flex;
+  align-items: center;
+}
