@@ -9,13 +9,9 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse" id="nav">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
       <div class="container">
-        <p> Nutriprep </p>
-      </div>
-    </nav>
-    <nav class="navbar navbar-default navbar-static-top" id="navigation">
-      <div class="container">
+        <%= link_to "NutriPrep", welcome_index_path %>
         <% if current_user %>
           <%= link_to "Logout", '/logout' %>
         <% else %>
