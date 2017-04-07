@@ -14,15 +14,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-a{
-  margin: 15px;
-  padding: 14px 16px;
+nav{
   color: white;
+  font-family: Avenir;
 }
 
-a:hover{
-  color: white;
-  background-color: #60ba62;
+nav a{
+  margin: 15px;
+  padding: 14px 16px;
+  color: black;
+  font-family: Avenir;
+  background-color: white;
+}
+
+#navigation{
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover{
+  color: black;
+  border-bottom: 3px solid #60ba62;
+  text-decoration: none;
 }
 
 #nav{
