@@ -1,31 +1,94 @@
-<table>
-  <tr>
-    <th>Gender</th>
-    <th>Age</th>
-    <th>Height</th>
-    <th>Current Weight</th>
-    <th>Goal Weight</th>
-    <th>Waist Size</th>
-    <th>Activity</th>
-    <th>Body Type</th>
-    <th>Goal</th>
-    <th>Diet</th>
-    <th colspan="2"></th>
-  </tr>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h2><center>Your Profile</center></h2>
+    </div>
+  </div>
+</div>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h4><center>Gender</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Age</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Height</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Current Weight</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Goal Weight</center></h4><br>
+    </div>
+  </div>
+</div>
 
-  <!-- <%# @biometric.each do |biometric| %> -->
-    <tr>
-      <td><%= @biometric.biometric.gender %></td>
-      <td><%= @biometric.biometric.age %></td>
-      <td><%= @biometric.biometric.height %></td>
-      <td><%= @biometric.biometric.current_weight %></td>
-      <td><%= @biometric.biometric.goal_weight %></td>
-      <td><%= @biometric.biometric.waist_size %></td>
-      <td><%= @biometric.biometric.activity %></td>
-      <td><%= @biometric.biometric.body_type %></td>
-      <td><%= @biometric.biometric.goal %></td>
-      <td><%= @biometric.biometric.diet %></td>
-    </tr>
-    <td><%= link_to 'Edit', edit_biometric_path(@biometric.biometric) %></td>
-  <%# end %>
-</table>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h5><center><%= @biometric.biometric.gender %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.age %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.height %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.current_weight %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.goal_weight %></center></h5><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h4><center>Waist Size</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Activity</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Body Type</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Goal</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Diet</center></h4><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h5><center><%= @biometric.biometric.waist_size %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.activity %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.body_type %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.goal %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.diet %></center></h5><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h5><center><%= link_to 'Edit', edit_biometric_path(@biometric.biometric) %></center></h5>
+    </div>
+  </div>
+</div>
