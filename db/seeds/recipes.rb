@@ -1,5 +1,7 @@
 p "seeding recipes"
 
+# creating each of the recipes
+
 RECIPES = [
   {  name: "Almond Muffin",
     instructions:
