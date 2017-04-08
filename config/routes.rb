@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'recipes/index'
+
   resources :biometrics
   root 'welcome#index'
   get 'welcome/index'
