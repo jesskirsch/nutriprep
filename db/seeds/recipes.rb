@@ -13,6 +13,10 @@ RECIPES = [
     ectomorphs:
     mesomorphs:
     endomorphs:
+    protein:
+    carbohydrate:
+    calories:
+    fat:
   },
   {  name:
     instructions:
@@ -24,6 +28,10 @@ RECIPES = [
     ectomorphs:
     mesomorphs:
     endomorphs:
+    protein:
+    carbohydrate:
+    calories:
+    fat:
   },
   {  name:
     instructions:
@@ -35,6 +43,10 @@ RECIPES = [
     ectomorphs:
     mesomorphs:
     endomorphs:
+    protein:
+    carbohydrate:
+    calories:
+    fat:
   },
   {  name:
     instructions:
@@ -46,6 +58,10 @@ RECIPES = [
     ectomorphs:
     mesomorphs:
     endomorphs:
+    protein:
+    carbohydrate:
+    calories:
+    fat:
   }
 ]
 
@@ -60,6 +76,10 @@ RECIPES.each do |recipe|
     atkins: recipe[:atkins],
     ectomorphs: recipe[:ectomorphs],
     mesomorphs: recipe[:mesomorphs],
-    endomorphs: recipe[:endomorphs]
+    endomorphs: recipe[:endomorphs],
+    protein: recipe[:protein],
+    carbohydrate: recipe[:carbohydrate],
+    calories: recipe[:calories],
+    fat: recipe[:fat]
   )
 end
