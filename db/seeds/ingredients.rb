@@ -10,6 +10,18 @@ INGREDIENTS = [
   {  recipe_id: 1,
     food_id: 2,
   },
+  {  recipe_id: 1,
+    food_id: 3,
+  },
+  {  recipe_id: 1,
+    food_id: 4,
+  },
+  {  recipe_id: 1,
+    food_id: 5,
+  },
+  {  recipe_id: 1,
+    food_id: 6,
+  }
 ]
   INGREDIENTS.each do |ingredient|
     Ingredient.find_or_create_by!(
