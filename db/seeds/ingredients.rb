@@ -1,11 +1,9 @@
 p "seeding ingredients"
-
 # create an association between recipe and food,
 # each is a new instance
-
+#
 INGREDIENTS = [
   {  recipe_id: 1,
-    food_id: 1,
   },
   {  recipe_id: 1,
     food_id: 2,
@@ -21,6 +19,9 @@ INGREDIENTS = [
   },
   {  recipe_id: 1,
     food_id: 6,
+  },
+  {  recipe_id: 1,
+    food_id: 7,
   }
 ]
   INGREDIENTS.each do |ingredient|

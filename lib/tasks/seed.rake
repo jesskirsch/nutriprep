@@ -2,7 +2,7 @@ namespace :db do
   desc "Seeding foods and recipes"
   task seed: :environment do
     %w{
-      recipes ingredients foods
+      recipes foods ingredients
     }.each do |file|
       load(File.join(Rails.root, 'db', 'seeds', "#{file}.rb"))
     end
