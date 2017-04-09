@@ -186,7 +186,6 @@ RECIPES = [
   },
   {  name: "Baked Catfish with Broccoli and Herb-Butter Blend",
     instructions: "Cooking fish in an aluminum-foil packet makes for easy cleanup and works especially well for single portions. Add a vegetable and you have a complete quick meal.  Use any compound butter or use 1 tablespoon of the Atkins recipe:  Herb-Butter Blend.
-
 	1.	Preheat oven to 350°F.
 	2.	Place the catfish on a 12-inch square piece of foil. Sprinkle fish with salt and freshly ground pepper to taste. Arrange broccoli florets around fish.
 	3.	Fold up the sides of the foil and crimp tightly to form a sealed packet.
@@ -204,6 +203,182 @@ RECIPES = [
     carbohydrate: 3.7,
     calories: 362,
     fat: 25.9,
+  },
+  {  name: "Baked Chicken with Artichokes",
+    instructions: "Use the Atkins recipe to make All Purpose Low-Carb Baking Mix for this recipe.  Dredging chicken in flour before sautéing seals in the juices and give it a nice color. 
+	1.	Preheat oven to 350°F. Place 1/4 cup baking mix, salt and pepper in a shallow plate and mix well. Dredge chicken in the mixture, turning to coat evenly and then tapping to remove any excess.
+	2.	In large skillet, heat oil over medium-high heat. Cook chicken until lightly browned, turning once, about 4 minutes. Transfer to baking dish.
+	3.	Add onion to skillet and sauté until softened, about 2 minutes. Add mushrooms and sauté until lightly golden, about 3 more minutes. Add garlic and sauté until aroma is released, about 30 seconds. Stir in wine, artichokes, rosemary and red pepper flakes and bring to a simmer.
+	4.	Pour artichoke mixture over chicken in the baking dish, cover and bake 40 minutes, until chicken is tender and cooked through. Season with additional salt and pepper, if desired, and stir in oregano before serving.",
+    category: "dinner",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 37.5,
+    carbohydrate: 8.6,
+    calories: 376,
+    fat: 17.8,
+  },
+  {  name: "Baked Fennel au Gratin",
+    instructions: "Use the Atkins recipe to make All Purpose Low-Carb Baking Mix for this recipe.
+	1.	Preheat oven to 375°F.
+	2.	Grease a shallow 2-quart baking dish with 1 teaspoon butter and set aside.
+	3.	Trim fennel leaving 1 stalks, Quarter bulbs and remove center core. Cut crosswise into 1/4 slices. Place fennel in a saucepan and cook in lightly salted water over medium heat until just tender, about 10 minutes. Drain fennel and season with salt and pepper. Transfer fennel to dish, pressing down to form an even layer. Set aside.
+	4.	In a medium saucepan melt butter over medium heat. Stir in 3 Tbsp baking mix and cook 2 minutes.
+	5.	Add cream and bring to a boil. Cook, whisking constantly, until slightly, about 5 minutes. Turn off heat and stir in Gruyere until melted.
+	6.	Pour sauce evenly over fennel and sprinkle dish with Parmesan cheese.Cover with foil and bake 15 minutes; uncover and bake 15-20 minutes more until golden brown and bubbly.",
+    category: "dinner",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 8.1,
+    carbohydrate: 5,
+    calories: 293,
+    fat: 26.4,
+  },
+  {  name: "Baked Meatballs",
+    instructions: "If possible, have the butcher grind together the three different meats. Be sure to wash your hands thoroughly after handling raw pork. 
+	1.	Heat oven to 375°F.
+	2.	In a skillet, over high heat, heat oil, cook onion 5 minutes, stirring frequently, until softened. Add garlic (minced) and cook 1 minute more.
+	3.	Transfer to a bowl and mix in ground meats, cheese, eggs, salt, and pepper. Roll into golf ball-size meatballs. Place on a jelly roll pan.
+	4.	Bake 20- 25 minutes, until browned and cooked through.",
+    category: "dinner",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 38.6,
+    carbohydrate: 1.8,
+    calories: 409,
+    fat: 26.7,
+  },
+  {  name: "Baked Salmon with Bok Choy and Mixed Greens",
+    instructions: "Use the Atkins recipe for Sherry Vinaigrette for the salad.
+	1.	Preheat oven to 475° F. Place olive oil and butter in a skillet large enough to hold fish in a single layer.
+	2.	Place skillet with just the olive oil and butter into the oven for 3 minutes, until butter is melted.  Season fish with salt and pepper.  Place fish flesh side down in prepared skillet.  Bake 10 minutes, turning carefully once halfway through cooking time, until just cooked through.
+	3.	Remove from skillet; tent with foil. Add bok choy and lemon peel to skillet.  Stir to coat with pan's oil.  Place in oven 1 minute, until leaves are wilted and stems are warmed through.
+	4.	To make puree, blend peppers and salsa in a blender 30 seconds. 
+	5.	Top bok choy with fish and dollop with the purée.
+	6.	Toss the greens, okra, peppers and snow peas with the Sherry Vinaigrette.  Serve with the salmon and bok choy.",
+    category: "dinner",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 37.5,
+    carbohydrate: 15.4,
+    calories: 623,
+    fat: 44.1,
+  },
+  {  name: "Artichokes with Three Cheeses",
+    instructions: "	1.	Preheat oven to 400°F.
+	2.	Arrange artichoke hearts in a single layer on the bottom of an 11-by-7-inch (2-quart) baking dish. Top with garlic and broth. Drizzle with olive oil and lemon juice. Sprinkle with parsley and basil.
+	3.	Cover evenly with the cheeses, ending with the Parmesan. Cover with aluminum foil, and bake until artichokes are tender and cheeses are melted, about 15 minutes.
+	4.	Uncover and continue baking until cheese is lightly golden and slightly crusty, about 25 minutes more.
+	5.	Remove from oven, and cool. Serve warm or at room temperature.",
+    category: "snack",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 11.5,
+    carbohydrate: 2.8,
+    calories: 250,
+    fat: 21.5,
+  },
+  {  name: "Apple Muffins with Cinnamon-Pecan Streusel",
+    instructions: "1.	Preheat oven to 350 F.  Prepare a muffin tin with 8 cupcake papers.  
+	2.	Combine 2/3 cup almond flour, chopped pecans, 2 tablespoons cinnamon, 1/8 teaspoon salt, 2 tablespoons granular sugar substitute (eryhtritol), a pinch of stevia and 2 tablespoons melted butter in a small bowl.  Mix with a fork until it begins to crumble.  Set aside while making the muffin batter.  
+	3.	For the muffins:  whisk together the eggs, 1/4 cup coconut milk, 2 teaspoons vanilla, 6 tablespoons granular sugar substitute (erythritol), a pinch of stevia, and 1/2 teaspoon ground cinnamon.  Add 1 cup almond flour, 2 tablespoons coconut flour, 1/4 teaspoon salt and 1 teaspoon baking powder; mix to combine then fold in 2/3 cup finely chopped apples.  
+	4.	Divide into muffin 8 wells topping each with about 2 tablespoons of the struesal.  Bake for 25 minutes, remove from oven and allow to sit for 10-20 minutes to cool before removing.  These may be eaten immediately or stored in an airtight container in the refrigerator for up to 1 week.",
+    category: "snack",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 7.5,
+    carbohydrate: 5.3,
+    calories: 242,
+    fat: 20.6,
+  },
+  {  name: "Atkins Garlic Toast Crisps",
+    instructions: "Use the Atkins recipe to make All Purpose Low-Carb Baking Mix for this recipe.  Have these crispy crackers with olive tapenade or guacamole.
+	1.	Heat oven to 350°F. Lightly coat an 8-inch by 4-inch loaf pan with olive oil spray.
+	2.	Place olive oil and garlic in a small microwave-safe cup and microwave on high until garlic turns golden, about 1 minute. (Or cook in a small saucepan over medium-high heat, for 4 to 5 minutes, stirring occasionally.) Set aside.
+	3.	In a large mixing bowl, combine baking mix (2 cups), baking powder and salt and blend well. Add club soda, eggs and 1 tablespoon of the garlic oil. Mix by hand or with an electric mixer until just combined.
+	4.	Transfer dough to prepared pan, smooth top and bake 45 minutes, until a tester inserted into the center comes out clean.
+	5.	Transfer loaf to a wire rack to cool for 20 minutes. Meanwhile, increase oven temperature to 400°F. 
+	6.	When loaf has cooled, using a serrated knife, cut loaf into 20 thin slices. Place them on an ungreased baking sheet and brush with the remaining garlic oil, turning to coat both sides.
+	7.	Bake until golden and crisp, about 14 minutes.",
+    category: "snack",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 10,
+    carbohydrate: 2.2,
+    calories: 90,
+    fat: 4.6,
+  },
+  {  name: "Atkins Cuisine Brownies",
+    instructions: "Use the Atkins recipe to make All Purpose Low-Carb Baking Mix to use in this recipe.  You will need 1 1/4 cups.
+	1.	Pre-heat oven to 325°F.
+	2.	Place the unsweetened chocolate and butter together in a bowl and microwave on high power for approximately 2 minutes until chocolate is melted.  Whisk in heavy cream.
+	3.	In a separate bowl, add the eggs and 1 cup of granular sugar substitute.  Beat together using an electric mixer until mixture is just blended.  Reduce mixer to low speed and then blend in the chocolate mixture.
+	4.	With a wooden spoon, mix in the baking powder and 1 1/4 cups low-carb baking mix.
+	5.	Coat 8 x 8 inch pan with non-stick vegetable oil spray and spread batter evenly into pan.
+	6.	Bake at 325°F for 30-35 minutes or until done (toothpick inserted in the center comes out clean). (Do not over-bake or brownies will be dry and hard.)
+	7.	Once cooled, cut into 5 rows by 5 rows to make 25 brownies.",
+    category: "snack",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 6.6,
+    carbohydrate: 2.7,
+    calories: 119,
+    fat: 9.4,
+  },
+  {  name: "Atkins Peanut Butter Granola Bar Parfait with Yogurt and Strawberries",
+    instructions: "In a parfait glass, layer the granola bar (chopped) with the yogurt and strawberries.",
+    category: "snack",
+    vegan: false,
+    paleo: false,
+    basic:false,
+    atkins: true,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 24.1,
+    carbohydrate: 12.6,
+    calories: 314,
+    fat: 9.5,
   }
 ]
 
