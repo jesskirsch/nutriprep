@@ -1,0 +1,96 @@
+<img src="https://6.s.blog.portea.com/wp-content/uploads/2015/06/Healthy-Food-for-Strong-Bones.jpg?x98662" class="img-responsive" alt="Responsive image">
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h2><center>Your Profile</center></h2>
+    </div>
+  </div>
+</div>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h4><center>Gender</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Age</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Height</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Current Weight</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Goal Weight</center></h4><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h5><center><%= @biometric.biometric.gender %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.age %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.height %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.current_weight %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.goal_weight %></center></h5><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h4><center>Waist Size</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Activity</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Body Type</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Goal</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Diet</center></h4><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h5><center><%= @biometric.biometric.waist_size %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.activity %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.body_type %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.goal %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.diet %></center></h5><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h5><center><%= link_to 'Edit', edit_biometric_path(@biometric.biometric), class:"btn btn-default new_button" %></center></h5>
+    </div>
+  </div>
+</div>

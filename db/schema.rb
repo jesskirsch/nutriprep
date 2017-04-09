@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405201518) do
+ActiveRecord::Schema.define(version: 20170409201518) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "biometrics", force: :cascade do |t|
+    t.string   "gender"
+    t.integer  "age"
+    t.integer  "height"
+    t.integer  "current_weight"
+    t.integer  "goal_weight"
+    t.integer  "waist_size"
+    t.string   "activity"
+    t.string   "body_type"
+    t.string   "diet"
+    t.string   "goal"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["user_id"], name: "index_biometrics_on_user_id", using: :btree
+  end
 
   create_table "foods", force: :cascade do |t|
     t.string   "name"
@@ -44,14 +61,18 @@ ActiveRecord::Schema.define(version: 20170405201518) do
   create_table "recipes", force: :cascade do |t|
     t.string   "name"
     t.text     "instructions"
-    t.string   "category"
-    t.boolean  "vegan"
-    t.boolean  "paleo"
-    t.boolean  "basic"
     t.boolean  "atkins"
+    t.boolean  "basic"
+    t.string   "category"
     t.boolean  "ectomorphs"
-    t.boolean  "mesomorphs"
     t.boolean  "endomorphs"
+    t.boolean  "mesomorphs"
+    t.boolean  "paleo"
+    t.boolean  "vegan"
+    t.decimal  "carbohydrate"
+    t.decimal  "fat"
+    t.decimal  "calories"
+    t.decimal  "protein"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
@@ -60,20 +81,11 @@ ActiveRecord::Schema.define(version: 20170405201518) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
-    t.string   "gender"
-    t.integer  "age"
-    t.integer  "height"
-    t.integer  "current_weight"
-    t.integer  "goal_weight"
-    t.integer  "waist_size"
-    t.string   "activity"
-    t.string   "body_type"
-    t.string   "goal"
-    t.string   "diet"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "biometrics", "users"
   add_foreign_key "ingredients", "foods"
   add_foreign_key "ingredients", "recipes"
 end

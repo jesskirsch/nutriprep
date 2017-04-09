@@ -1,3 +1,23 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h2{
+  font-family: Avenir !important;
+  align-items: center;
+}
+
+h4{
+  font-family: Avenir !important;
+}
+
+.row, p{
+  font-family: Avenir !important;
+}
+
+.carousel-control.left, .carousel-control.right{
+  background-image: none !important;
+}
+
+body{
+  margin-bottom: 30px;
+}

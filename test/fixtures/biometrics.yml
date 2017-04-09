@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gender: MyString
+  age: 1
+  height: 1
+  current_weight: 1
+  goal_weight: 1
+  waist_size: 1
+  activity: MyString
+  body_type: MyString
+  diet: MyString
+  goal: MyString
+  user: one
+
+two:
+  gender: MyString
+  age: 1
+  height: 1
+  current_weight: 1
+  goal_weight: 1
+  waist_size: 1
+  activity: MyString
+  body_type: MyString
+  diet: MyString
+  goal: MyString
+  user: two

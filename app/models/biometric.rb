@@ -1,5 +1,6 @@
 class Biometric < ApplicationRecord
   belongs_to :user
+<<<<<<< HEAD
 
   def diet_caluculator
     if :gender == 'male'
@@ -23,4 +24,6 @@ class Biometric < ApplicationRecord
     end
   end
 
+=======
+>>>>>>> 6fa17eeac06d4028aaca39e940c73bdf241f905c
 end

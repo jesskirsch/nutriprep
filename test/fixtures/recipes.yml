@@ -3,23 +3,31 @@
 one:
   name: MyString
   instructions: MyText
-  category: MyString
-  vegan: false
-  paleo: false
-  basic: false
   atkins: false
+  basic: false
+  category: MyString
   ectomorphs: false
-  mesomorphs: false
   endomorphs: false
+  mesomorphs: false
+  paleo: false
+  vegan: false
+  carbohydrate: 9.99
+  fat: 9.99
+  calories: 9.99
+  protein: 9.99
 
 two:
   name: MyString
   instructions: MyText
-  category: MyString
-  vegan: false
-  paleo: false
-  basic: false
   atkins: false
+  basic: false
+  category: MyString
   ectomorphs: false
-  mesomorphs: false
   endomorphs: false
+  mesomorphs: false
+  paleo: false
+  vegan: false
+  carbohydrate: 9.99
+  fat: 9.99
+  calories: 9.99
+  protein: 9.99

@@ -4,28 +4,8 @@ one:
   name: MyString
   email: MyString
   password_digest: MyString
-  gender: MyString
-  age: 1
-  height: 1
-  current_weight: 1
-  goal_weight: 1
-  waist_size: 1
-  activity: MyString
-  body_type: MyString
-  goal: MyString
-  diet: MyString
 
 two:
   name: MyString
   email: MyString
   password_digest: MyString
-  gender: MyString
-  age: 1
-  height: 1
-  current_weight: 1
-  goal_weight: 1
-  waist_size: 1
-  activity: MyString
-  body_type: MyString
-  goal: MyString
-  diet: MyString
