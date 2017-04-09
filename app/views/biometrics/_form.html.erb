@@ -15,100 +15,53 @@
     </div>
   <% end %>
 
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner center_div" role="listbox">
-      <div class="item active">
-
-          <div class="form-group">
-            <label for="Gender", class="col-sm-2 col-sm-offset-3 control-label">Gender</label>
-            <div class="col-sm-7">
-          <%= f.text_field :gender, class: "form-control", style: "width: 30%;" %>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="Height", class="col-sm-2 col-sm-offset-3 control-label">Height</label>
-          <div class="col-sm-7">
-        <%= f.text_field :height, class: "form-control", style: "width: 30%;" %>
-        </div>
-      </div>
-
-        <div class="form-group">
-          <label for="Current_Weight", class="col-sm-2 col-sm-offset-3 control-label">Current Weight</label>
-          <div class="col-sm-7">
-        <%= f.text_field :current_weight, class: "form-control", style: "width: 30%;" %>
-        </div>
-      </div>
-
-        <div class="form-group">
-          <label for="Goal_weight", class="col-sm-2 col-sm-offset-3 control-label">Goal Weight</label>
-          <div class="col-sm-7">
-        <%= f.text_field :goal_weight, class: "form-control", style: "width: 30%;" %>
-        </div>
-      </div>
-
-        <div class="form-group">
-          <label for="Waist_size", class="col-sm-2 col-sm-offset-3 control-label">Waist Size</label>
-          <div class="col-sm-7">
-        <%= f.text_field :waist_size, class: "form-control", style: "width: 30%;" %>
-        </div>
-      </div>
-      </div>
-
-
-    <!-- second half of form   -->
-      <div class="item">
-        <div class="form-group">
-          <label for="Activity", class="col-sm-2 col-sm-offset-3 control-label">Activity</label>
-          <div class="col-sm-7">
-        <%= f.text_field :activity, class: "form-control", style: "width: 30%;" %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="Body_type", class="col-sm-2 col-sm-offset-3 control-label">Body Type</label>
-        <div class="col-sm-7">
-      <%= f.text_field :body_type, class: "form-control", style: "width: 30%;" %>
-      </div>
-    </div>
-
-
-      <div class="form-group">
-        <label for="Goal", class="col-sm-2 col-sm-offset-3 control-label">Goal</label>
-        <div class="col-sm-7">
-      <%= f.text_field :goal, class: "form-control", style: "width: 30%;" %>
-      </div>
-    </div>
-
-      <div class="form-group">
-        <label for="Diet", class="col-sm-2 col-sm-offset-3 control-label">Diet</label>
-        <div class="col-sm-7">
-      <%= f.text_field :diet, class: "form-control", style: "width: 30%;" %>
-      </div>
-    </div>
-
-
-          <div class="form-group">
-              <div class="col-sm-offset-5 col-sm-5">
-            <%= f.submit "Submit", class: "btn btn-default" %>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.select :gender, ['male', 'female']%>
+  </p>
+<br>
+  <p>
+    <%= f.label :height_in_inches %><br>
+    <%= f.text_field :height %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :current_weight_in_pounds %><br>
+    <%= f.text_field :current_weight %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :goal_weight_in_pounds %><br>
+    <%= f.text_field :goal_weight %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :waist_size_in_inches %><br>
+    <%= f.text_field :waist_size %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :activity %><br>
+    <%= f.select :activity, [['little to no exercise', '1' ], ['light exercise', '2'], ['moderate exercise', '3'], ['heavy exercise', '4'], ['very heavy exercise', '5']] %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :body_type %><br>
+    <%= f.select :body_type, [['ectomorphs', '1'], ['mesomorphs', '2'],['endomorphs', '3']] %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :goal %><br>
+    <%= f.select :goal, [['to gain weight', '1'], ['to lose weight', '2'], ['to maintain', '3'], ['increase strength', '4'], ['increase performance', '5']] %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :diet %><br>
+    <%= f.select :diet, [['basic', '1'], ['atkins', '2'], ['paleo', '3'], ['vegan', '4']] %>
+  </p>
+  <br>
+  <p>
+    <%= f.submit %>
+  </p>
 
 <% end %>

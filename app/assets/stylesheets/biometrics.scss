@@ -6,3 +6,15 @@
   border-style: none;
   color: white;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new_button:hover{
+  background-color: #60ba62;
+  border-style: none;
+  color: white;
+}
