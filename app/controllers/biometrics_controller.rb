@@ -38,6 +38,7 @@ before_action :authorize
     @biometric.user = current_user
 
     if @biometric.save!
+      diet_caluculator(biometric_params)
       redirect_to biometrics_path
     else
       render 'new'
