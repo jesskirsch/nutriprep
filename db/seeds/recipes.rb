@@ -862,6 +862,51 @@ RECIPES = [
     carbohydrate: 17,
     calories: 115,
     fat: 4,
+  },
+  {  name: "Spinach with Chickpeas",
+    instructions: "	1.	Grab two stainless steel 3½-inch biscuit cutters, and grease the insides well with melted ghee. Place one cutter on a plate and fill it with the sausage meat. 
+	2.	Gently press the meat down to uniformly shape a sausage patty.
+	3.	Heat a skillet over medium heat and add a tablespoon of ghee. When the fat is shimmering, add the patty to the pan. If you really want the patty to keep its perfectly round shape, you can keep the mold on until the cooked patty shrinks away from the sides. Then, lift it off and away.
+	4.	Clean the biscuit cutter and grease it again.
+	5.	Fry the sausage about 2 to 3 minutes on each side or until fully cooked. If your patty’s thick, you may need to cover the pan to make sure it’s cooked through. Once the patty’s ready, transfer it to a plate.
+	6.	Now, make the eggy “buns.” Grab two small bowls and crack one egg into each. Pierce the yolks with a fork.
+	7.	Heat a skillet over medium-high heat with the remaining tablespoon of ghee. (Make sure you’ve got a tight-fitting lid for this skillet.) When the ghee’s shimmering, place the two greased biscuit cutters in the pan, and pour an egg into each mold.
+	8.	Season the eggs with salt and pepper to taste. Then, add ¼ cup water to the skillet (outside of the egg molds), making sure not to splash the eggs.
+	9.	Turn down the heat to low, and cover the pan. Cook the eggs, covered, for about 3 minutes or until cooked through.
+	10.	Transfer the eggs to a paper-towel lined plate. One easy way to do this is to slide a spatula under the mold as you tilt it up while wearing a heat-resistant glove.
+	11.	Assemble the faux-“McMuffin” by sandwiching the sausage patty in between the two egg rounds. If you’re feeling old-school, you can eat the sammie as-is, or wake up your palate with a squiggle of sriracha. But my favorite addition to this breakfast burger? A big dollop of homemade guacamole.",
+    category: "breakfast",
+    vegan: false,
+    paleo: true,
+    basic:false,
+    atkins: false,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 29.5,
+    carbohydrate: 10.4,
+    calories: 295,
+    fat: 13.3,
+  },
+  {  name: "Acorn Squash Egg-in-the-Hole",
+    instructions: "	1.	Preheat the oven to 425 degrees F. 
+	2.	Chop the tip and tail off of the acorn squash. Cut the acorn squash into four 1/2 to 3/4 inch thick rounds. Scoop the seeds and innards out of each round and discard. Lightly coat both sides of each round with olive oil and place on a lightly-oiled (or sprayed) baking sheet. Sprinkle with salt and pepper and bake for 15 minutes, or until tender when poked with a fork. 
+	3.	Remove squash from oven and lower the oven temperature to 350 degrees F. 
+	4.	Crack one egg into a measuring cup that has a lip. Pour the egg into one of the squash rounds. Repeat with the remaining 3 eggs (Note: If you think you can carefully crack the eggs into the acorn squash, you can skip using the measuring cup, although I find it's easiest to use a measuring cup). 
+	5.	Place in the oven and bake for 12 to 15 minutes, or until egg whites have set up. 
+	6.	Serve with cooked crumbled bacon, sriracha (or hot sauce of choice), and any additional toppings you desire.",
+    category: "breakfast",
+    vegan: false,
+    paleo: true,
+    basic:false,
+    atkins: false,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 17.5,
+    carbohydrate: 13.8,
+    calories: 120,
+    fat: 10,
   }
 ]
 
