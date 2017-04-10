@@ -6359,6 +6359,19 @@ FOODS = [
       carbohydrate: 0,
       calories: 0,
       fat: 0,
+    },
+    {  name: '6 oz Cod',
+      vegan: true,
+      paleo: true,
+      basic: true,
+      atkins: false,
+      ectomorphs: true,
+      mesomorphs: true,
+      endomorphs: true,
+      protein: 0,
+      carbohydrate: 0,
+      calories: 0,
+      fat: 0,
     }
 ]
 

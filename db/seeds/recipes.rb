@@ -293,7 +293,7 @@ RECIPES = [
     category: "snack",
     vegan: false,
     paleo: false,
-    basic:false,
+    basic: true,
     atkins: true,
     ectomorphs: true,
     mesomorphs: true,
@@ -311,7 +311,7 @@ RECIPES = [
     category: "snack",
     vegan: false,
     paleo: false,
-    basic:false,
+    basic: true,
     atkins: true,
     ectomorphs: true,
     mesomorphs: true,
@@ -333,7 +333,7 @@ RECIPES = [
     category: "snack",
     vegan: false,
     paleo: false,
-    basic:false,
+    basic: true,
     atkins: true,
     ectomorphs: true,
     mesomorphs: true,
@@ -355,7 +355,7 @@ RECIPES = [
     category: "snack",
     vegan: false,
     paleo: false,
-    basic:false,
+    basic: true,
     atkins: true,
     ectomorphs: true,
     mesomorphs: true,
@@ -1169,6 +1169,45 @@ Combine the frozen blackberries, milk of choice, protein powder, flax meal , van
     carbohydrate: 3.9,
     calories: 221,
     fat: 7.5,
+  },
+  {  name: "Roasted cod with herb butter",
+    instructions: "  Preheat oven to 350°F.
+	  Place the catfish on a 12-inch square piece of foil. Sprinkle fish with salt and freshly ground pepper to taste. Arrange broccoli florets around fish.
+		Fold up the sides of the foil and crimp tightly to form a sealed packet.
+		Bake for 10 15 minutes until fish is flaky and broccoli is tender.
+		Transfer to a dish, open foil and top with a tablespoon of Herb-Butter Blend.",
+    category: "dinner",
+    vegan: false,
+    paleo: false,
+    basic: true,
+    atkins: false,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 28.7,
+    carbohydrate: 3.7,
+    calories: 362,
+    fat: 25.9,
+  },
+  {  name: "Fennel with mix cheese",
+    instructions: "Preheat oven to 375°F.
+    Grease a shallow 2-quart baking dish with 1 teaspoon butter and set aside.
+		Trim fennel leaving 1 stalks, Quarter bulbs and remove center core. Cut crosswise into 1/4 slices. Place fennel in a saucepan and cook in lightly salted water over medium heat until just tender, about 10 minutes. Drain fennel and season with salt and pepper. Transfer fennel to dish, pressing down to form an even layer. Set aside.
+		In a medium saucepan melt butter over medium heat. Stir in 3 Tbsp baking mix and cook 2 minutes.
+		Add cream and bring to a boil. Cook, whisking constantly, until slightly, about 5 minutes. Turn off heat and stir in Gruyere until melted.
+		Pour sauce evenly over fennel and sprinkle dish with Parmesan cheese.Cover with foil and bake 15 minutes; uncover and bake 15-20 minutes more until golden brown and bubbly.",
+    category: "dinner",
+    vegan: false,
+    paleo: false,
+    basic: true,
+    atkins: false,
+    ectomorphs: true,
+    mesomorphs: true,
+    endomorphs: true,
+    protein: 8.1,
+    carbohydrate: 5,
+    calories: 293,
+    fat: 26.4,
   }
 ]
 
