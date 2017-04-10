@@ -5,3 +5,38 @@
     </div>
   </div>
 </div>
+
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <% @recipes.each do |recipe| %>
+        <h4><%= link_to recipe[:name], recipes_show_path %></h4>
+        <% end %>
+    </div>
+    <div class="col-md-1">
+      <% @recipes.each do |recipe| %>
+        <h3><%= recipe[:protein] %></h3>
+        <% end %>
+    </div>
+    <div class="col-md-1">
+      <% @recipes.each do |recipe| %>
+        <h3><%= recipe[:calories] %></h3>
+        <% end %>
+    </div>
+    <div class="col-md-1 ">
+      <% @recipes.each do |recipe| %>
+        <h3><%= recipe[:carbohydrate] %></h3>
+        <% end %>
+    </div>
+    <div class="col-md-1">
+      <% @recipes.each do |recipe| %>
+        <h3><%= recipe[:calories] %></h3>
+        <% end %>
+    </div>
+    <div class="col-md-1">
+      <% @recipes.each do |recipe| %>
+        <h3><%= recipe[:category] %></h3>
+        <% end %>
+    </div>
+  </div>
+</div>
