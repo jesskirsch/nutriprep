@@ -1,3 +1,18 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a{
+  color: black;
+  line-height: 25px;
+}
+
+a:hover{
+  color: black;
+  border-bottom: 3px solid #60ba62;
+  text-decoration: none;
+}
+
+h5{
+  line-height: 25px;
+}

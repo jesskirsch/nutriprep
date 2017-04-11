@@ -1,14 +1,38 @@
 
 <div class=container-fluid>
   <div class="row">
-    <div class="col-md-2 col-md-offset-1">
-      <%= @recipe.name %>
+    <div class="col-md-8 col-md-offset-2">
+      <h3><center><%= @recipe.name %></center></h3>
     </div>
-    <div class="col-md-2">
-      <%= @recipe.category %>
+  </div>
+</div>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <center><%= @recipe.category %></center>
     </div>
-    <div class="col-md-5">
-      <%= @recipe.instructions %>
+  </div>
+</div>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <center><h5>Instructions</h5></center>
+    </div>
+  </div>
+</div>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <center><%= @recipe.instructions %></center>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h5><center><%= link_to 'Back to Nutrition Plan', recipes_path, class:"btn btn-default new_button" %></center></h5>
     </div>
   </div>
 </div>

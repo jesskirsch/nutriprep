@@ -15,11 +15,16 @@
     </div>
   <% end %>
 
+    <p>
+      <%= f.label :gender %><br>
+      <%= f.select :gender, ['male', 'female']%>
+    </p>
+  <br>
   <p>
-    <%= f.label :gender %><br>
-    <%= f.select :gender, ['male', 'female']%>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
   </p>
-<br>
+  <br>
   <p>
     <%= f.label :height_in_inches %><br>
     <%= f.text_field :height %>
