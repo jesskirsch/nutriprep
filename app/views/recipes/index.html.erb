@@ -33,32 +33,32 @@
 <div class=container-fluid>
   <div class="row">
     <div class="col-md-4 col-md-offset-1">
-      <% @recipes.each do |recipe| %>
+      <% @chosen_recipe.each do |recipe| %>
         <h5><%= link_to recipe[:name], recipe_path(recipe) %></h5>
         <% end %>
     </div>
     <div class="col-md-1">
-      <% @recipes.each do |recipe| %>
+      <% @chosen_recipe.each do |recipe| %>
         <h5><%= recipe[:category] %></h5>
         <% end %>
     </div>
     <div class="col-md-1">
-      <% @recipes.each do |recipe| %>
+      <% @chosen_recipe.each do |recipe| %>
         <h5><%= recipe[:protein] %></h5>
         <% end %>
     </div>
     <div class="col-md-1">
-      <% @recipes.each do |recipe| %>
+      <% @chosen_recipe.each do |recipe| %>
         <h5><%= recipe[:fat] %></h5>
         <% end %>
     </div>
     <div class="col-md-2 ">
-      <% @recipes.each do |recipe| %>
+      <% @chosen_recipe.each do |recipe| %>
         <h5><%= recipe[:carbohydrate] %></h5>
         <% end %>
     </div>
     <div class="col-md-1">
-      <% @recipes.each do |recipe| %>
+      <% @chosen_recipe.each do |recipe| %>
         <h5><%= recipe[:calories] %></h5>
         <% end %>
     </div>
