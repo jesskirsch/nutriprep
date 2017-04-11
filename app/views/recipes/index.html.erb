@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-md-2 col-md-offset-1">
       <% @recipes.each do |recipe| %>
-        <h4><%= link_to recipe[:name], recipes_show_path %></h4>
+        <h4><%= link_to recipe[:name], recipe_path(recipe) %></h4>
         <% end %>
     </div>
     <div class="col-md-1">
