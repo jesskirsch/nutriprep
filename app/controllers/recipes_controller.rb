@@ -21,13 +21,14 @@ class RecipesController < ApplicationController
     else
       return @vegan_recipe
     end
-
   end
 
   def show
-
     @recipe = Recipe.find(params[:id])
-    
+    @ingredients = Ingredient.where(recipe_id: @recipe.id)
+    @foods = Food.where(ingredients: {id: @ingredients.pluck(:id)}).joins(:ingredients)
+
+
   end
 
 end
