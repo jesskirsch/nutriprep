@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  vegan: false
+  paleo: false
+  basic: false
+  atkins: false
+  ectomorphs: false
+  mesomorphs: false
+  endomorphs: false
+  good_for_you: false
+
+two:
+  name: MyString
+  vegan: false
+  paleo: false
+  basic: false
+  atkins: false
+  ectomorphs: false
+  mesomorphs: false
+  endomorphs: false
+  good_for_you: false
