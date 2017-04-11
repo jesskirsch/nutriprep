@@ -13,7 +13,6 @@ class RecipesController < ApplicationController
     @chosen_recipe = diet_map[@diet]
     # @chosen_recipe = @chosen_recipe.shuffle
     @chosen_recipe.uniq! { |recipe| recipe[:category] }
-
   end
 
   def vegan_recipe
@@ -37,7 +36,6 @@ class RecipesController < ApplicationController
   end
 
 
-
   private
 
   def diet_map
@@ -56,6 +54,4 @@ class RecipesController < ApplicationController
   def set_ingredients
     @ingredients = Ingredient.where(recipe_id: @recipe.id)
   end
-
-
 end

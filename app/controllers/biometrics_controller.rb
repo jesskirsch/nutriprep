@@ -19,21 +19,6 @@ before_action :authorize
   end
 
   def create
-    # keys = [
-    #   :gender,
-    #   :age,
-    #   :height,
-    #   :current_weight,
-    #   :goal_weight,
-    #   :waist_size,
-    #   :activity,
-    #   :body_type,
-    #   :goal,
-    #   :diet
-    # ]
-    # attributes = Hash[keys.zip(keys.map {|key| params[key]})]
-    # attributes[:user_id] = current_user.id
-    # p attributes
     @biometric = Biometric.new(biometric_params)
     @biometric.user = current_user
 
@@ -60,7 +45,6 @@ before_action :authorize
 
     redirect_to biometrics_path
   end
-
 
   private
     def biometric_params
