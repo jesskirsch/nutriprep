@@ -15,6 +15,7 @@ class RecipesController < ApplicationController
     @chosen_recipe.uniq! { |recipe| recipe[:category] }
   end
 
+  ## TODO: move to recipe model
   def vegan_recipe
     Recipe.where(vegan: true).map { |n| n.recipe_payload }
   end

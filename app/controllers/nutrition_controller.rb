@@ -4,33 +4,59 @@ class NutritionController < ApplicationController
     @diet = @biometric.diet
     @body_type = @biometric.body_type
 
-    @good_food = []
-    @bad_food = []
+    @nutrition = Nutrition.all
+    @suggested_foods = Nutrition.where(@biometric.pretty_conditions.merge(good_for_you: true))
+    @not_suggested_foods = Nutrition.where(@biometric.pretty_conditions.merge(good_for_you: false))
 
-    nutrition = Nutrition.all
-
-    nutrition.each do |food|
-      if (food.good_for_you)
-        # Your goal would be to turn this into a helper method, to re-use for other diets.
-        if (food.vegan && @diet='vegan')
-          if (food.ectomorphs && @body_type = 'ectomorphs')
-            @good_food << food.name
-          else
-            @bad_food << food.name
-          end
-          if (food.mesomorphs && @body_type = 'mesomorphs')
-            @good_food << food.name
-          else
-            @bad_food << food.name
-          end
-          # if (food.) ........
-        else
-          @bad_food << food.name
-        end
-        # Method would end here
-      else
-        @bad_food << food.name
-      end
-    end
   end
+
+    def vegan_ectomorphs
+      Nutrition.where(vegan: true, ectomorphs: true, good_for_you: true)
+    end
+
+    def vegan_mesomorphs
+      Nutrition.where(vegan: true, mesomorphs: true, good_for_you: true)
+    end
+
+    def vegan_endomorphs
+      Nutrition.where(vegan: true, endomorphs: true, good_for_you: true)
+    end
+
+    def paleo_ectomorphs
+      Nutrition.where(paleo: true, ectomorphs: true, good_for_you: true)
+    end
+
+    def paleo_mesomorphs
+      Nutrition.where(paleo: true, mesomorphs: true, good_for_you: true)
+    end
+
+    def paleo_endomorphs
+      Nutrition.where(paleo: true, endomorphs: true, good_for_you: true)
+    end
+
+    def basic_ectomorphs
+      Nutrition.where(basic: true, ectomorphs: true, good_for_you: true)
+    end
+
+    def basic_mesomorphs
+      Nutrition.where(basic: true, mesomorphs: true, good_for_you: true)
+    end
+
+    def basic_endomorphs
+      Nutrition.where(basic: true, endomorphs: true, good_for_you: true)
+    end
+
+    def atkins_ectomorphs
+      Nutrition.where(atkins: true, ectomorphs: true, good_for_you: true)
+    end
+
+    def atkins_mesomorphs
+      Nutrition.where(atkins: true, mesomorphs: true, good_for_you: true)
+    end
+
+    def atkins_endomorphs
+      Nutrition.where(atkins: true, endomorphs: true, good_for_you: true)
+    end
+
+
 end

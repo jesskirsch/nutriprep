@@ -1,6 +1,29 @@
 class Biometric < ApplicationRecord
   belongs_to :user
 
+  def pretty_conditions
+    conditions_hash = {}
+    if diet == '4'
+      conditions_hash[:vegan] = true
+    elsif diet == '3'
+      conditions_hash[:paleo] = true
+    elsif diet == '2'
+      conditions_hash[:atkins] = true
+    elsif diet == '1'
+      conditions_hash[:basic] = true
+    end
+
+    if body_type == '3'
+      conditions_hash[:endomorphs] = true
+    elsif body_type == '2'
+      conditions_hash[:mesomorphs] = true
+    elsif body_type == '1'
+      conditions_hash[:ectomorphs] = true
+    end
+
+    conditions_hash
+  end
+
   def pfc_ratio(dac)
     p dac
     p protein_calories = (35 * dac) / 100
