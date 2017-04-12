@@ -23,7 +23,7 @@ before_action :authorize
     @biometric.user = current_user
 
     if @biometric.save!
-      puts @biometric.diet_calculator
+      @biometric.diet_calculator
       redirect_to biometrics_path
     else
       render 'new'
@@ -49,6 +49,6 @@ before_action :authorize
 
   private
     def biometric_params
-      params.require(:biometric).permit(:gender, :age, :height, :current_weight, :goal_weight, :waist_size, :wrist, :hip, :forearm, :activity, :body_type, :goal, :diet)
+      params.require(:biometric).permit(:gender, :age, :height, :current_weight, :goal_weight, :waist_size, :neck, :hip, :activity, :body_type, :goal, :diet)
     end
 end

@@ -46,6 +46,16 @@
   </p>
   <br>
   <p>
+    <%= f.label :neck_size_in_inches %><br>
+    <%= f.text_field :neck %>
+  </p>
+  <br>
+  <p>
+    <%= f.label :hip_size_in_inches %><br>
+    <%= f.text_field :hip %>
+  </p>
+  <br>
+  <p>
     <%= f.label :activity %><br>
     <%= f.select :activity, [['little to no exercise', '1' ], ['light exercise', '2'], ['moderate exercise', '3'], ['heavy exercise', '4'], ['very heavy exercise', '5']] %>
   </p>
