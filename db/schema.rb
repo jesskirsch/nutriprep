@@ -60,6 +60,20 @@ ActiveRecord::Schema.define(version: 20170412161918) do
     t.index ["recipe_id"], name: "index_ingredients_on_recipe_id", using: :btree
   end
 
+  create_table "nutritions", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "vegan"
+    t.boolean  "paleo"
+    t.boolean  "basic"
+    t.boolean  "atkins"
+    t.boolean  "ectomorphs"
+    t.boolean  "mesomorphs"
+    t.boolean  "endomorphs"
+    t.boolean  "good_for_you"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.string   "name"
     t.text     "instructions"
