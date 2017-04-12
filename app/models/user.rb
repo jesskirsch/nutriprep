@@ -5,16 +5,16 @@ class User < ApplicationRecord
   validates :email, presence: true
 
   def get_activity
-    activities[self.biometric.activity]
+    activities[self.biometric.activity.to_f]
   end
 
   def activities
     {
-      '1' => 'little to no exercise',
-      '2' => 'little exercise',
-      '3'=> 'moderate exercise',
-      '4' => 'heavy exercise',
-      '5' => 'very heavy exercise'
+      1.2 => 'little to no exercise',
+      1.375 => 'little exercise',
+      1.55 => 'moderate exercise',
+      1.725 => 'heavy exercise',
+      1.9 => 'very heavy exercise'
     }
   end
 
