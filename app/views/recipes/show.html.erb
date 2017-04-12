@@ -1,15 +1,16 @@
 
-<div class=container-fluid>
+<div class=container-fluid id="recipe_header">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3><center><%= @recipe.name %></center></h3>
+    <div class="col-md-8 col-md-offset-2" id="recipe_text">
+      <h1 id="title_text"><center><%= @recipe.name %></center></h1>
     </div>
   </div>
 </div>
+<br>
 <div class=container-fluid>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <center><h4>Ingredients</h4></center>
+      <center><h3>Ingredients</h3></center>
     </div>
   </div>
 </div>
@@ -22,10 +23,11 @@
     </div>
   </div>
 </div>
+<br>
 <div class=container-fluid>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <center><h4>Instructions</h4></center>
+      <center><h3>Instructions</h3></center>
     </div>
   </div>
 </div>
