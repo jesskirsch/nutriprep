@@ -36,6 +36,17 @@ class RecipesController < ApplicationController
     @foods = Food.where(ingredients: {id: @ingredients.pluck(:id)}).joins(:ingredients)
   end
 
+  def view
+    @biometric = current_user.biometric
+
+    @diet = @biometric.diet
+
+    @recipes = basic_recipe || atkins_recipe || paleo_recipe || vegan_recipe
+
+    @chosen_recipe = @recipes.shuffle
+    @chosen_recipe = diet_map[@diet]
+  end
+
 
   private
 
