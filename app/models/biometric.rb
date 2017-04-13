@@ -22,10 +22,10 @@ class Biometric < ApplicationRecord
     end
 
     conditions_hash
+  end 
 
   def to_kg(n)
     n * 0.453592
-
   end
 
   def pfc_ratio(dac)
