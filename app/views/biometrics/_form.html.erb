@@ -16,58 +16,58 @@
   <% end %>
 
     <p>
-      <%= f.label :gender %><br>
+      <center><%= f.label :gender %></center><br>
       <%= f.select :gender, ['male', 'female']%>
     </p>
   <br>
   <p>
-    <%= f.label :age %><br>
+    <center><%= f.label :age %></center><br>
     <%= f.text_field :age %>
   </p>
   <br>
   <p>
-    <%= f.label :height_in_inches %><br>
+    <center><%= f.label :height_in_inches %></center><br>
     <%= f.text_field :height %>
   </p>
   <br>
   <p>
-    <%= f.label :current_weight_in_pounds %><br>
+    <center><%= f.label :current_weight_in_pounds %></center><br>
     <%= f.text_field :current_weight %>
   </p>
   <br>
   <p>
-    <%= f.label :goal_weight_in_pounds %><br>
+    <center><%= f.label :goal_weight_in_pounds %></center><br>
     <%= f.text_field :goal_weight %>
   </p>
   <br>
   <p>
-    <%= f.label :waist_size_in_inches %><br>
+    <center><%= f.label :waist_size_in_inches %></center><br>
     <%= f.text_field :waist_size %>
   </p>
   <br>
   <p>
-    <%= f.label :activity %><br>
+    <center><%= f.label :activity %></center><br>
     <%= f.select :activity, [['little to no exercise', 1.2 ], ['light exercise', 1.375], ['moderate exercise', 1.55], ['heavy exercise', 1.725], ['very heavy exercise', 1.9]] %>
   </p>
   <br>
   <p>
-    <%= f.label :body_type %><br>
-    <%= image_tag'https://shapescale.com/blog/wp-content/uploads/sites/5/2016/11/Screen-Shot-2016-11-18-at-10.19.04-AM.png', id: 'image_id' %><br>
+    <center><%= f.label :body_type %></center><br>
+    <center><%= image_tag'https://shapescale.com/blog/wp-content/uploads/sites/5/2016/11/Screen-Shot-2016-11-18-at-10.19.04-AM.png', id: 'image_id' %></center><br>
     <%= f.select :body_type, [['ectomorphs', '1'], ['mesomorphs', '2'],['endomorphs', '3']] %>
   </p>
   <br>
   <p>
-    <%= f.label :goal %><br>
+    <center><%= f.label :goal %></center><br>
     <%= f.select :goal, [['to gain weight', '1'], ['to lose weight', '2'], ['to maintain', '3'], ['increase strength', '4'], ['increase performance', '5']] %>
   </p>
   <br>
   <p>
-    <%= f.label :diet %><br>
-    <%= f.select :diet, [['basic', '1'], ['atkins', '2'], ['paleo', '3'], ['vegan', '4']] %>
+    <center><%= f.label :diet %></center><br>
+    <%= f.select :diet, [['basic nutrition', '1'], ['atkins diet', '2'], ['paleo diet', '3'], ['vegan diet', '4']] %>
   </p>
   <br>
   <p>
-    <%= f.submit %>
+    <%= f.submit "Create Profile", class: "button" %>
   </p>
 
 <% end %>
