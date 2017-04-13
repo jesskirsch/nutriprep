@@ -88,6 +88,27 @@
 
 <div class=container-fluid>
   <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h4><center>Neck Size</center></h4><br>
+    </div>
+    <div class="col-md-2">
+      <h4><center>Hip Size</center></h4><br>
+    </div>
+  </div>
+</div>
+<div class=container-fluid>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <h5><center><%= @biometric.biometric.neck %></center></h5><br>
+    </div>
+    <div class="col-md-2">
+      <h5><center><%= @biometric.biometric.hip %></center></h5><br>
+    </div>
+  </div>
+</div>
+
+<div class=container-fluid>
+  <div class="row">
     <div class="col-md-2 col-md-offset-4">
       <h5><center><%= link_to 'Edit Your Profile', edit_biometric_path(@biometric.biometric), class:"btn btn-default new_button" %></center></h5>
     </div>

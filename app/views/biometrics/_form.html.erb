@@ -46,6 +46,16 @@
   </p>
   <br>
   <p>
+  <center><%= f.label :neck_size_in_inches %></center><br>
+  <%= f.text_field :neck %>
+</p>
+<br>
+<p>
+  <center><%= f.label :hip_size_in_inches %></center><br>
+  <%= f.text_field :hip %>
+</p>
+<br>
+  <p>
     <center><%= f.label :activity %></center><br>
     <%= f.select :activity, [['little to no exercise', 1.2 ], ['light exercise', 1.375], ['moderate exercise', 1.55], ['heavy exercise', 1.725], ['very heavy exercise', 1.9]] %>
   </p>
@@ -63,11 +73,11 @@
   <br>
   <p>
     <center><%= f.label :diet %></center><br>
-    <%= f.select :diet, [['basic nutrition', '1'], ['atkins diet', '2'], ['paleo diet', '3'], ['vegan diet', '4']] %>
+    <%= f.select :diet, [['basic nutrition diet', '1'], ['atkins diet', '2'], ['paleo diet', '3'], ['vegan diet', '4']] %>
   </p>
   <br>
   <p>
-    <%= f.submit "Create Profile", class: "button" %>
+    <%= f.submit class: "button" %>
   </p>
 
 <% end %>
