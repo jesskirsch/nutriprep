@@ -17,7 +17,7 @@
 
     <p>
       <center><%= f.label :gender %></center><br>
-      <%= f.select :gender, ['male', 'female']%>
+      <%= f.select :gender, ['Male', 'Female']%>
     </p>
   <br>
   <p>
@@ -47,7 +47,7 @@
   <br>
   <p>
     <center><%= f.label :activity %></center><br>
-    <%= f.select :activity, [['little to no exercise', 1.2 ], ['light exercise', 1.375], ['moderate exercise', 1.55], ['heavy exercise', 1.725], ['very heavy exercise', 1.9]] %>
+    <%= f.select :activity, [['Little To No Exercise', 1.2 ], ['Light Exercise', 1.375], ['Moderate Exercise', 1.55], ['Heavy Exercise', 1.725], ['Very Heavy Exercise', 1.9]] %>
   </p>
   <br>
     <center><%= f.label :neck_size_in_inches %></center><br>
@@ -62,17 +62,17 @@
   <p>
     <center><%= f.label :body_type %></center><br>
     <center><%= image_tag'https://shapescale.com/blog/wp-content/uploads/sites/5/2016/11/Screen-Shot-2016-11-18-at-10.19.04-AM.png', id: 'image_id' %></center><br>
-    <%= f.select :body_type, [['ectomorphs', '1'], ['mesomorphs', '2'],['endomorphs', '3']] %>
+    <%= f.select :body_type, [['Ectomorph', '1'], ['Mesomorph', '2'],['Endomorph', '3']] %>
   </p>
   <br>
   <p>
     <center><%= f.label :goal %></center><br>
-    <%= f.select :goal, [['to gain weight', '1'], ['to lose weight', '2'], ['to maintain', '3'], ['increase strength', '4'], ['increase performance', '5']] %>
+    <%= f.select :goal, [['To Gain Weight', '1'], ['To Lose Weight', '2'], ['To Maintain', '3'], ['Increase Strength', '4'], ['Increase Performance', '5']] %>
   </p>
   <br>
   <p>
     <center><%= f.label :diet %></center><br>
-    <%= f.select :diet, [['basic nutrition diet', '1'], ['atkins diet', '2'], ['paleo diet', '3'], ['vegan diet', '4']] %>
+    <%= f.select :diet, [['Basic Nutrition Diet', '1'], ['Atkins Diet', '2'], ['Paleo Diet', '3'], ['Vegan Diet', '4']] %>
   </p>
   <br>
   <p>
