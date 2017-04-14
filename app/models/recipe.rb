@@ -1,5 +1,6 @@
 class Recipe < ApplicationRecord
-
+  has_many :ingredients
+  
   def recipe_payload
     {
       id: id,
