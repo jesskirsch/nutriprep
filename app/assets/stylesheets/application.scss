@@ -18,8 +18,7 @@
 
 body{
   font-family: Avenir !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin: 0 !important;
 }
 
 nav a{
@@ -45,4 +44,9 @@ nav a:hover{
 #nav{
   display: flex;
   align-items: center;
+}
+
+a:hover{
+  text-decoration: none;
+  border-bottom: none;
 }
