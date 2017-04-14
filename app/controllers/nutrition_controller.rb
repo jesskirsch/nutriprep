@@ -1,4 +1,6 @@
 class NutritionController < ApplicationController
+  before_action :authorize
+
   def index
     @biometric = current_user.biometric
     @diet = @biometric.diet

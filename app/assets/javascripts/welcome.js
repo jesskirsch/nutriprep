@@ -13,7 +13,7 @@ $(document).on('turbolinks:load', function(){
     }
     next.children(':first-child').clone().appendTo($(this));
 
-    if (next.next().length>0) {
+    if (next.next().length > 0) {
       next.next().children(':first-child').clone().appendTo($(this));
     } else {
     	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));

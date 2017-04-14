@@ -50,10 +50,10 @@ class User < ApplicationRecord
 
   def diets
     {
-      '1' => 'basic',
-      '2' => 'atkins',
-      '3'=> 'paleo',
-      '4' => 'vegan'
+      '1' => 'Basic Nutrition Plan',
+      '2' => 'Atkins Diet',
+      '3'=> 'Paleo Diet',
+      '4' => 'Vegan Diet'
     }
   end
 

@@ -10,17 +10,15 @@
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
       <div class="container">
-        <%= link_to "NutriPrep", welcome_index_path %>
+        <strong><%= link_to "NutriPrep", welcome_index_path %></strong>
         <% if current_user %>
           <%= link_to "Logout", '/logout' %>
         <% else %>
           <%= link_to 'Login', '/login' %>  <%= link_to 'Signup', '/signup' %>
         <% end %>
-        <%= link_to "Home", welcome_index_path %>
-        <%= link_to "Create", new_biometric_path %>
         <%= link_to "Profile", biometrics_path %>
-        <%= link_to "Nutrition Plan", recipes_path %>
-        <%= link_to "Food Choices", nutrition_index_path %>
+        <%= link_to "Customized Nutrition Plan", recipes_path %>
+        <%= link_to "Eating Right For Your Type", nutrition_index_path %>
       </div>
     </nav>
 

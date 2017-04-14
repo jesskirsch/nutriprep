@@ -1,6 +1,8 @@
 class RecipesController < ApplicationController
+  before_action :authorize
   before_action :set_recipe, only: :show
   before_action :set_ingredients, only: :show
+
 
   def index
     @biometric = current_user.biometric

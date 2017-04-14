@@ -11,9 +11,8 @@
  * It is generally better to create a new file per style scope.
  *
  */
-
-@import "./welcome.scss";
 @import "./user.scss";
+@import "./welcome.scss";
 @import "./biometrics.scss";
 @import "./recipes.scss";
 
