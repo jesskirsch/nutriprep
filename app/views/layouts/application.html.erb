@@ -8,22 +8,24 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
-      <div class="container">
-        <strong><%= link_to "NutriPrep", welcome_index_path %></strong>
-        <% if current_user %>
-          <%= link_to "Logout", '/logout' %>
-        <% else %>
-          <%= link_to 'Login', '/login' %>  <%= link_to 'Signup', '/signup' %>
-        <% end %>
-        <%= link_to "Profile", biometrics_path %>
-        <%= link_to "Customized Nutrition Plan", recipes_path %>
-        <%= link_to "Eating Right For Your Type", nutrition_index_path %>
-      </div>
-    </nav>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+        <div class="container">
+          <strong><%= link_to "NutriPrep", welcome_index_path %></strong>
+          <% if current_user %>
+            <%= link_to "Logout", '/logout' %>
+          <% else %>
+            <%= link_to 'Login', '/login' %>  <%= link_to 'Signup', '/signup' %>
+          <% end %>
+          <%= link_to "Profile", biometrics_path %>
+          <%= link_to "Customized Nutrition Plan", recipes_path %>
+          <%= link_to "Eating Right For Your Type", nutrition_index_path %>
+        </div>
+      </nav>
 
-    <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <%= yield %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>

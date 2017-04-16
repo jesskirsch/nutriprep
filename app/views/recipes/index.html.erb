@@ -8,6 +8,23 @@
 </div>
 <br><br>
 
+<div class="container">
+  <div class="row">
+    <% @chosen_recipe.each do |recipe| %>
+      <%= link_to recipe_path(recipe), class: 'recipe-wrapper' do %>
+        <%= image_tag "http://placehold.it/250x250", class: 'recipe-img' %>
+        <div class="recipe-meta">
+          <h5><%= recipe[:name] %></h5>
+          <p>Calories: <%= recipe[:calories] %></p>
+          <p>Protein: <%= recipe[:protein] %></p>
+          <p>Fat: <%= recipe[:fat] %></p>
+          <p>Carbohydrate: <%= recipe[:carbohydrate] %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
 <div class=container-fluid>
   <div class="row">
     <div class="col-md-4 col-md-offset-1">
