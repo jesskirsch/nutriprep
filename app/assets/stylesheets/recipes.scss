@@ -41,6 +41,14 @@ a.recipe-wrapper:hover{
 .recipe-ingredients{
   background: #f5f5f5;
 }
+.recipe-ingredients li{
+  list-style: none;
+  display: flex;
+}
+.recipe-ingredients li label{
+  font-weight: normal;
+  margin-left: 15px;
+}
 .recipe-instructions{
 }
 nav a:hover{

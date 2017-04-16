@@ -13,10 +13,10 @@
       <h3>Ingredients</h3>
       <div class="form-check">
         <% @foods.each do |food| %>
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" value="">
-            <%= food.name %>
-      </label>
+          <li>
+            <%= check_box_tag(food.id, food.name) %>
+            <%= label_tag(food.id, food.name, :class => 'checkbox-primary') %>
+          </li>
         <% end %>
       </div>
     </div>

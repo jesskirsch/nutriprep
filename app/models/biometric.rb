@@ -75,3 +75,72 @@ class Biometric < ApplicationRecord
   end
 
 end
+
+# {
+#   "ectomorphs" => {
+#     "basic" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "atkin" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "paleo" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "vegan" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     }
+#   },
+#   "mesomorphs" => {
+#     "basic" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "atkin" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "paleo" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "vegan" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     }
+#   },
+#   "endomorphs" => {
+#     "basic" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "atkin" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "paleo" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     },
+#     "vegan" => {
+#       "protein" => ,
+#       "carbs" => ,
+#       "fat" =>
+#     }
+#   }
+# }
