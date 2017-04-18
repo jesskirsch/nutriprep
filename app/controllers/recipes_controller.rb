@@ -15,6 +15,9 @@ class RecipesController < ApplicationController
     @chosen_recipe = diet_map[@diet]
     # @chosen_recipe = @chosen_recipe.shuffle
     @chosen_recipe.uniq! { |recipe| recipe[:category] }
+
+    @suggested_foods = Nutrition.where(@biometric.pretty_conditions.merge(good_for_you: true))
+    @not_suggested_foods = Nutrition.where(@biometric.pretty_conditions.merge(good_for_you: false))
   end
 
   ## TODO: move to recipe model

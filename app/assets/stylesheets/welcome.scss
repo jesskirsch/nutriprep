@@ -11,8 +11,23 @@ h2{
 
 h4{
   font-family: Avenir !important;
+  font-weight: 400;
 }
-
+p {
+    margin-bottom: 1.6em;
+    line-height: 2.0;
+    font-size: 14px;
+    font-family: "Montserrat-Light";
+}
+.text-lt {
+    font-family: "Montserrat-Light", sans-serif;
+}
+.text-sp {
+    letter-spacing: 0.05em;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
 .row, p{
   font-family: Avenir !important;
 }
@@ -23,7 +38,7 @@ h4{
 
 .carousel-inner{
   width:100%;
-  max-height: 600px !important;
+  max-height: 800px !important;
 }
 
 .multi-item-carousel > img {
@@ -62,9 +77,8 @@ h1{
 #multi-scroller{
   padding: 70px 0;
 }
-
-#diet-types{
-  padding: 40px 0;
+footer{
+  bottom: 0;
 }
 
 #footer-nav{
@@ -140,7 +154,9 @@ h1{
 .footer-menu{
     color: #fff;
 }
-
+.block {
+    padding: 90px 0;
+}
 .download-app-block {
     padding: 80px 0;
     background-color: #fff;
@@ -157,6 +173,239 @@ h1{
   display: inline-block;
   vertical-align: middle;
 }
-.download-app-wrap{
-
+.download-app-wrap {
+    font-size: 17px;
+    line-height: 27px;
+    padding-left: 14%;
+    margin-top: -10%;
+}
+.download-app-wrap h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 0 12px 0;
+}
+.download-app-wrap h4 a {
+    color: #60ba62;
+}
+.download-app-wrap h2 {
+    font-size: 45px;
+    margin: 0 0 20px 0;
+}
+.download-app-wrap p {
+    font-size: 17px;
+}
+.download-from a:first-child {
+    margin-right: 25px;
+}
+.blog-block {
+    background: #f5f5f5;
+    padding: 70px 0;
+}
+.blog-block {
+    margin-bottom: 45px;
+}
+.blog-block h4 {
+    font-size: 22px;
+    margin: 0 0 38px 0;
+    color: #484848;
+}
+.blog-single-wrap figure {
+    overflow: hidden;
+    height: 242px;
+    border-radius: 4px;
+}
+.blog-description {
+    font-size: 13px;
+    line-height: 19px;
+}
+.blog-description {
+    background: #fff;
+    border-radius: 4px;
+    padding: 25px 30px 30px;
+    width: 92%;
+    margin: auto;
+    position: relative;
+    margin-top: -57px;
+}
+.blog-block h6 {
+    margin: 0 0 10px 0;
+}
+.blog-block h6 a {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 0 0;
+    font-weight: 300;
+}
+.blog-description .posted-date {
+    margin-bottom: 14px;
+    display: block;
+}
+.blog-block p {
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 0 20px 0;
+}
+.blog-description p a {
+    color: #60ba62;
+}
+.top-text-header {
+    margin-bottom: 35px;
+}
+.team-member-block h4 {
+    font-size: 22px;
+    margin-bottom: 22px;
+    color: #484848;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+.team-member-block .top-text-header p {
+    width: 62%;
+    margin: 0 auto 30px;
+}
+.team-member-col {
+    float: none;
+    display: inline-block;
+}
+.member-info {
+    background: #fff;
+    padding: 30px 15px;
+}
+.member-wrap figure {
+    position: relative;
+    width: 141px;
+    height: 141px;
+    border-radius: 141px;
+    overflow: hidden;
+    margin: 0 auto 30px;
+}
+.text-center figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+.team-member-block h6 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+.member-wrap h6 a {
+    color: #575757;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+.member-wrap figure:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #60ba62;
+    border-radius: 141px;
+}
+.cat-list-wrap {
+  padding-bottom: 0;
+}
+.cat-list-wrap h4 {
+    margin-top: 0px;
+    font-size: 22px;
+    color: #484848;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+.cat-wrap {
+    height: 270px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.cat-wrap a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+.cat-wrap a span {
+    text-transform: uppercase;
+    display: inline-block;
+    top: 45%;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.cat-wrap a figure {
+    margin: 0;
+    background: #000;
+}
+.cat-wrap a figure img {
+    opacity: 0.7;
+    max-width: 100%;
+}
+.full-width-video {
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+.video-wrap {
+    position: relative;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.full-width-video .video-wrap .video-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(http://s1.madang.kenzap.com/wp-content/uploads/2016/11/video-bg.jpg);
+}
+.video-wrap video {
+    cursor: pointer;
+}
+.video-text {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+}
+.video-text a {
+    margin-bottom: 55px;
+    display: inline-block;
+}
+.video-text h2 {
+    font-size: 31px;
+    color: #fff;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+.video-wrap:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+.promo-block{
+  padding: 60px 60px 0;
+}
+.promo-item{
+  padding: 15px 40px;
+}
+.promo-item h3{
+  color: #575757;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 0.06em;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+.how-it-works-block h1 {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: #484848;
+    letter-spacing: 0.05em;
 }

@@ -8,94 +8,54 @@
 </div>
 <br><br>
 
-<div class="container">
-  <div class="row">
-    <% @chosen_recipe.each do |recipe| %>
-      <%= link_to recipe_path(recipe), class: 'recipe-wrapper' do %>
-        <%= image_tag "http://placehold.it/250x250", class: 'recipe-img' %>
-        <div class="recipe-meta">
-          <h5><%= recipe[:name] %></h5>
-          <p>Calories: <%= recipe[:calories] %></p>
-          <p>Protein: <%= recipe[:protein] %></p>
-          <p>Fat: <%= recipe[:fat] %></p>
-          <p>Carbohydrate: <%= recipe[:carbohydrate] %></p>
-        </div>
+<div class="recipes-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="recipes-header">
+        <center><h4>Daily Meals (Sample)</h4></center>
+      </div>
+      <% @chosen_recipe.each do |recipe| %>
+        <%= link_to recipe_path(recipe), class: 'recipe-wrapper' do %>
+          <%= image_tag "http://placehold.it/250x250", class: 'recipe-img' %>
+          <div class="recipe-meta">
+            <h5><%= recipe[:name] %></h5>
+            <span class="meal-cat"><b>Category:</b> <%= recipe[:category] %></span>
+            <span><b>Calories:</b> <%= recipe[:calories] %></span>
+            <span><b>Protein:</b> <%= recipe[:protein] %></span>
+            <span><b>Fat:</b> <%= recipe[:fat] %></span>
+            <span><b>Carbohydrate:</b> <%= recipe[:carbohydrate] %></span>
+          </div>
+        <% end %>
       <% end %>
-    <% end %>
+      <div class=container-fluid>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1 pull-right">
+            <h4><%= link_to "View More Recipes >>", viewall_path %></h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<div class=container-fluid>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-1">
-      <h4>Name</h4>
-    </div>
-    <div class="col-md-1">
-      <h4>Meal</h4>
-    </div>
-    <div class="col-md-1">
-      <h4>Protein</h4>
-    </div>
-    <div class="col-md-1">
-      <h4>Fat</h4>
-    </div>
-    <div class="col-md-2">
-      <h4>Carbohydrates</h4>
-    </div>
-    <div class="col-md-1">
-      <h4>Calories</h4>
+  <div class="container">
+    <div class="suggested-foods row">
+      <div class="col-md-5 col-md-offset-1">
+        <center><h4>Suggested Foods</h4></center>
+      </div>
+      <div class="col-md-4">
+        <center><h4>Food to Stay Away From</h4></center>
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        <% @suggested_foods.each do |food| %>
+        <center><%= food.name %></center>
+        <% end %>
+      </div>
+      <div class="col-md-4">
+        <% @not_suggested_foods.each do |food| %>
+        <center><%= food.name %></center>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 
-
-<div class=container-fluid>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-1">
-      <% @chosen_recipe.each do |recipe| %>
-        <h5><%= link_to recipe[:name], recipe_path(recipe) %></h5>
-        <% end %>
-    </div>
-    <div class="col-md-1">
-      <% @chosen_recipe.each do |recipe| %>
-        <h5><%= recipe[:category] %></h5>
-        <% end %>
-    </div>
-    <div class="col-md-1">
-      <% @chosen_recipe.each do |recipe| %>
-        <h5><%= recipe[:protein] %></h5>
-        <% end %>
-    </div>
-    <div class="col-md-1">
-      <% @chosen_recipe.each do |recipe| %>
-        <h5><%= recipe[:fat] %></h5>
-        <% end %>
-    </div>
-    <div class="col-md-2 ">
-      <% @chosen_recipe.each do |recipe| %>
-        <h5><%= recipe[:carbohydrate] %></h5>
-        <% end %>
-    </div>
-    <div class="col-md-1">
-      <% @chosen_recipe.each do |recipe| %>
-        <h5><%= recipe[:calories] %></h5>
-        <% end %>
-    </div>
-  </div>
-</div>
-<div class=container-fluid>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-1">
-      <h4><%= link_to "View More Recipes", viewall_path %></h4>
-    </div>
-  </div>
-</div>
-<br>
-<br>
-<div class=container-fluid>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <h5><center><%= link_to 'Eating Right For Your Body Type', nutrition_index_path, class:"btn btn-default new_button" %></center></h5>
-    </div>
-  </div>
 </div>

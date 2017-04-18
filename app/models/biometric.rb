@@ -46,7 +46,7 @@ class Biometric < ApplicationRecord
   end
 
   def male_dac_calculator
-    if self.waist_size.nil? && self.neck_size.nil?
+    if self.waist_size.nil? && self.neck.nil?
       bmr = (9.99 * self.current_weight) + (6.25 * self.height) - (4.92 *self.age) + 5 # Mifflins-St-Joer Formula
     else
       bf = (86.010 * Math.log10(39 - 18)) - (70.041 * Math.log10(self.height)) + 36.76 # Body Fat women

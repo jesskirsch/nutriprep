@@ -49,55 +49,43 @@
 
 <!-- How it Works Section with explanation of the program -->
 
-<div class=container>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <h1><center>HOW IT WORKS</center></h1>
-    </div>
-  </div>
-</div>
-<br>
-<div class=container>
-  <div class="row">
-    <div class="col-md-2 col-md-offset-1">
-      <h3><center>Create Your Profile</center></h3><br>
-      <p><center>In order to create a custom nutrition plan to best suite your needs, you are required to fill out a profile that will help us calculate all of your biometrics.</center></p>
-    </div>
-    <div class="col-md-2 col-md-offset-2">
-      <h3><center>Get Your Biometrics</center></h3><br>
-      <p><center>Through simple calculations, we will be able to tell you everything from your BMI to what your Protein, Fat, and Carbohydrate ratio should be.</center></p>
-    </div>
-    <div class="col-md-2 col-md-offset-2">
-      <h3><center>Receive A Meal Plan</center></h3><br>
-      <p><center>Based on your PFC ratio and Calorie Intake, you will receive a custom meal plan and a list of foods that you should and should not eat in order to reach your goals.</center></p>
-    </div>
-  </div>
-</div>
-<br>
-<br>
 
-<div class=container-fluid>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <h5><center><%= link_to 'Start NutriPrep Today', new_biometric_path, class: "btn btn-primary btn-lg new_button" %></center></h5>
+<br>
+<div class="promo-block">
+  <div class=container>
+    <div class="row">
+      <div class="text-center how-it-works-block">
+        <h1><center>HOW IT WORKS</center></h1>
+      </div>
+    </div>
+  </div>
+  <div class=container>
+    <div class="row">
+      <div class="col-md-4 promo-item">
+        <h3><center>Create Your Profile</center></h3>
+        <p><center>In order to create a custom nutrition plan to best suite your needs, you are required to fill out a profile that will help us calculate all of your biometrics.</center></p>
+      </div>
+      <div class="col-md-4 promo-item">
+        <h3><center>Get Your Macros</center></h3>
+        <p><center>Through simple calculations, we will be able to tell you everything from your BMI to what your Protein, Fat, and Carbohydrate ratio should be.</center></p>
+      </div>
+      <div class="col-md-4 promo-item">
+        <h3><center>Receive A Meal Plan</center></h3>
+        <p><center>Based on your PFC ratio and Calorie Intake, you will receive a custom meal plan and a list of foods that you should and should not eat in order to reach your goals.</center></p>
+      </div>
     </div>
   </div>
 </div>
-<br>
-<br>
-
 
 <!-- Food Slider () -->
 <div id="multi-scroller">
 <div class=container-fluid>
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <h2><center>Receive Chef Selected Meals</center></h2>
+      <h2><center>Chef Selected Meals</center></h2>
     </div>
   </div>
 </div>
-<br>
-<br>
 
 <div class="container">
   <div class="row">
@@ -138,25 +126,29 @@
   </div>
 </div>
 </div>
-<br>
-<br>
-<br><br>
+
 
 <!-- more promo -->
-
-<div class=container-fluid id="promo_pic">
-  <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-        <div class="promo">
-      <h1><center>YOUR GOALS THAT MATCH <br>YOUR LIFESTYLE</center></h1><br>
-      <h3><center>I AM VEGAN</center></h3><br>
-      <h3><center>I WANT TO LOSE WEIGHT</center></h3>
-    </div>
+<section class="block">
+  <div class="container-fluid" id="promo_pic">
+    <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+          <div class="promo">
+        <h1><center>YOUR GOALS THAT MATCH <br>YOUR LIFESTYLE</center></h1><br>
+        <h3><center>I AM VEGAN</center></h3><br>
+        <h3><center>I WANT TO LOSE WEIGHT</center></h3>
+        <div class=container-fluid>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <h5><center><%= link_to 'Start NutriPrep Today', new_biometric_path, class: "btn btn-primary btn-lg new_button" %></center></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
-</div>
-<br>
-<br>
+</section>
 
 <div id="diet-types">
 <div class=container>
@@ -170,7 +162,7 @@
 <div class=container>
   <div class="row">
     <div class="col-md-3">
-      <h2><center>Basic Nutritional Diet</center></h2>
+      <h2><center>Basic Diet</center></h2>
       <p>The basic nutritional plan has no restrictions at all. This is for people that want to focus on portions and sustaining a healthy lifestyle.</p>
     </div>
     <div class="col-md-3">
@@ -190,35 +182,32 @@
 </div>
 
 <!-- sample recipe -->
-<div class=container id="sample">
-  <div class="row">
-    <div class="col-md-5 col-md-offset-1">
-      <h1>Sample Dinner Recipe:</h1><br>
-      <h2>Pan Fried Chicken With Rosemary</h2>
-      <h5>Ingredients:</h5>
-      <p>1 chicken breast<br>
-      Olive oil<br>
-      Rosemary<br>
-      Herb de Provence<br>
-      Salt <br>
-      Pepper<br>
-      Spinach<br>
-      Roma Tomatoes<br>
-      Radicchio<br>
-      Aceto Balsamico</p>
-      <h5>Instructions:</h5>
-      <p>Dry the chicken filet add salt pepper and rosemary and the herb de provence.
-Heat the olive oil in the pan.
-Pan fry for 6 minutes per side.
-In a bowl, mix the olive oil with the balsamic, salt, and pepper and whisk well.
-Add the spinach, the radicchio and the tomatoes. Toss well
-and serve the chicken and the salad and enjoy.</p>
-    </div>
-    <div class="col-md-4">
-      <img src="http://i67.tinypic.com/155s9ds.jpg" alt="chicken recipe">
+<section class="block">
+  <div class=container id="sample">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <h1>Sample Dinner Recipe:</h1><br>
+        <h2>Pan Fried Chicken With Rosemary</h2>
+        <h5>Ingredients:</h5>
+        <p>1 chicken breast<br>
+        Olive oil<br>
+        Rosemary<br>
+        Herb de Provence<br>
+        Salt <br>
+        Pepper<br>
+        Spinach<br>
+        Roma Tomatoes<br>
+        Radicchio<br>
+        Aceto Balsamico</p>
+        <h5>Instructions:</h5>
+        <p>Dry the chicken filet add salt pepper and rosemary and the herb de provence. Heat the olive oil in the pan. Pan fry for 6 minutes per side. In a bowl, mix the olive oil with the balsamic, salt, and pepper and whisk well. Add the spinach, the radicchio and the tomatoes. Toss well and serve the chicken and the salad and enjoy.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="http://i67.tinypic.com/155s9ds.jpg" alt="chicken recipe">
+      </div>
     </div>
   </div>
-</div>
+</section>
 <br><br>
 <section class="full-width-video">
   <div class="video-wrap">
@@ -317,13 +306,6 @@ and serve the chicken and the salad and enjoy.</p>
                 <h6 class="text-uppercase"><a class="text-lt text-sp" href="#">MARINKA SULIS</a></h6>
                 <span class="designation text-capitalize">Founder &amp; CEO</span>
             </div>
-            <div class="social-links">
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook hvr-wobble-top"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus hvr-wobble-top"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter hvr-wobble-top"></i></a></li>
-                </ul>
-            </div>
         </div>
     </div>
     <!-- team member single ends -->
@@ -335,13 +317,6 @@ and serve the chicken and the salad and enjoy.</p>
                 <h6 class="text-uppercase"><a class="text-lt text-sp" href="#">ROY COLEMAN</a></h6>
                 <span class="designation text-capitalize">Chief</span>
             </div>
-            <div class="social-links">
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook hvr-wobble-top"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus hvr-wobble-top"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter hvr-wobble-top"></i></a></li>
-                </ul>
-            </div>
         </div>
     </div>
     <!-- team member single ends -->
@@ -352,13 +327,6 @@ and serve the chicken and the salad and enjoy.</p>
                 <figure><a href="#"><img src="http://s1.madang.kenzap.com/wp-content/uploads/2016/11/member3.jpg" alt="TERESA MAYER"></a></figure>
                 <h6 class="text-uppercase"><a class="text-lt text-sp" href="#">TERESA MAYER</a></h6>
                 <span class="designation text-capitalize">Marketing Director</span>
-            </div>
-            <div class="social-links">
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook hvr-wobble-top"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus hvr-wobble-top"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter hvr-wobble-top"></i></a></li>
-                </ul>
             </div>
         </div>
     </div>

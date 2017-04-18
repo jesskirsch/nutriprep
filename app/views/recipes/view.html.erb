@@ -7,7 +7,34 @@
 </div>
 <br><br>
 
-<div class=container-fluid>
+<div class="recipes-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="recipes-header">
+        <center><h4>Daily Meals (Sample)</h4></center>
+      </div>
+      <% @chosen_recipe.each do |recipe| %>
+        <%= link_to recipe_path(recipe), class: 'recipe-wrapper' do %>
+          <%= image_tag "http://placehold.it/250x250", class: 'recipe-img' %>
+          <div class="recipe-meta">
+            <h5><%= recipe[:name] %></h5>
+            <span class="meal-cat"><b>Category:</b> <%= recipe[:category] %></span>
+            <span><b>Calories:</b> <%= recipe[:calories] %></span>
+            <span><b>Protein:</b> <%= recipe[:protein] %></span>
+            <span><b>Fat:</b> <%= recipe[:fat] %></span>
+            <span><b>Carbohydrate:</b> <%= recipe[:carbohydrate] %></span>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+      <h5><center><%= link_to 'Back To Nutrition Plan', recipes_path, class:"btn btn-default new_button" %></center></h5>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- <div class=container-fluid>
   <div class="row">
     <div class="col-md-4 col-md-offset-1">
       <h4>Name</h4>
@@ -64,14 +91,12 @@
         <% end %>
     </div>
   </div>
-</div>
+</div> -->
 
-<br>
-<br>
-<div class=container-fluid>
+<!-- <div class=container-fluid>
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
       <h5><center><%= link_to 'Back To Nutrition Plan', recipes_path, class:"btn btn-default new_button" %></center></h5>
     </div>
   </div>
-</div>
+</div> -->
