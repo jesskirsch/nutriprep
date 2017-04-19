@@ -31,7 +31,12 @@ p {
 .row, p{
   font-family: Avenir !important;
 }
-
+.mb-2{
+  margin-bottom: 30px;
+}
+.p-rt-0{
+  padding-right: 0;
+}
 .carousel-control.left, .carousel-control.right{
   background-image: none !important;
 }
@@ -85,7 +90,9 @@ footer{
   background-color: rgb(229,229,229);
   margin: 0;
 }
-
+#madang-logo{
+  margin: 10px 0;
+}
 #social{
   height: 50px;
   width: 130px;
@@ -408,4 +415,7 @@ footer{
     font-weight: 400;
     color: #484848;
     letter-spacing: 0.05em;
+}
+.form-check-input{
+  margin-right: 10px !important;
 }

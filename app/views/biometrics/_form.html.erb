@@ -20,16 +20,17 @@
     <h4>Step 1</h4>
   </div>
   <div class="col-md-10">
-    <div class="form-inline">
+    <div class="form-inline mb-2">
         <legend class="col-sm-2">Gender</legend>
         <div class="form-check col-sm-3">
           <label class="form-check-label">
             <input type="radio" class="form-check-input" name="biometric[gender]" id="gender_male" value="male" checked>Male</label>
         </div>
-        <div class="form-check col-sm-3">
+        <div class="form-check col-sm-4">
         <label class="form-check-label">
             <input type="radio" class="form-check-input" name="biometric[gender]" id="gender_female" value="female">Female</label>
         </div>
+        <div class="clearfix"></div>
     </div>
     <div class="form-group">
       <label for="weight" class="col-sm-2 col-form-label col-form-label">Weight</label>
@@ -75,7 +76,7 @@
     <h4>Step 3</h4>
   </div>
   <div class="col-md-10">
-    <label for="activity" class="col-sm-2">Current Activity</label>
+    <label for="activity" class="col-sm-2 p-rt-0">Current Activity</label>
     <select name="biometric[activity]" class="custom-select col-sm-2" id="activity">
       <option selected>Choose...</option>
       <option value="1.2">Little To No Exercise</option>

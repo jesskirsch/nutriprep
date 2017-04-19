@@ -12,7 +12,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
         <div class="container">
-          <strong><%= link_to "NutriPrep", welcome_index_path %></strong>
+          <strong><%= image_tag "madang-logo.png", id: "madang-logo" %><%= link_to "NutriPrep", welcome_index_path, class: 'logo' %></strong>
           <% if current_user %>
             <%= link_to "Logout", '/logout' %>
           <% else %>
@@ -30,9 +30,9 @@
         <div class="top-footer">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-sm-4 footer-logo">
+              <div class="col-xs-12 col-sm-2 col-sm-offset-1">
                 <figure>
-                  <a class="img-responsive" href="http://s1.madang.kenzap.com/" title="Madang" rel="home"><img src="http://s1.madang.kenzap.com/wp-content/themes/madang/images/madang-logo-white.png" alt="Madang"></a>
+                  <a class="img-responsive" href="http://s1.madang.kenzap.com/" title="Madang" rel="home"><img src="<%= asset_path( 'madang-logo-white.png' ) %>" alt="Madang"></a>
                 </figure>
               </div>
               <div class="col-xs-12 col-sm-2 footer-social-links pull-right">

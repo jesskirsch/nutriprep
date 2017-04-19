@@ -1,6 +1,6 @@
 class Recipe < ApplicationRecord
   has_many :ingredients
-  
+
   def recipe_payload
     {
       id: id,
@@ -9,7 +9,8 @@ class Recipe < ApplicationRecord
       carbohydrate: carbohydrate,
       fat: fat,
       calories: calories,
-      category: category
+      category: category,
+      image: image,
     }
   end
 

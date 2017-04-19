@@ -466,6 +466,7 @@ RECIPES = [
   {  name: "Overnight Oatmeal",
     instructions: "Combine water, oats, dried cranberries, dried apricots and salt in a 5- or 6-quart slow cooker. Turn heat to low. Put the lid on and cook until the oats are tender and the porridge is creamy, 7 to 8 hours.Stovetop VariationHalve the above recipe to accommodate the size of most double boilers: Combine 4 cups water, 1 cup steel-cut oats, 3 tablespoons dried cranberries, 3 tablespoons dried apricots and ⅛ teaspoon salt in the top of a double boiler. Cover and cook over boiling water for about 1½ hours, checking the water level in the bottom of the double boiler from time to time.",
     category: "breakfast",
+    image: "oatmeal.jpg",
     vegan: true,
     paleo: false,
     basic:false,
